@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="39.743" tests="4" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.16.0.20200610-1735\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.6_10\bin"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="C:\Users\mayur.choudhary\Downloads\E2EProject\EMBEDDED"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\mayur.choudhary"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-01-14"/>
+    <property name="java.home" value="C:\Program Files\Amazon Corretto\jdk11.0.6_10"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.6+10-LTS"/>
+    <property name="user.name" value="mayur.choudhary"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.6.10.1"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\MAYUR~1.CHO\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.6"/>
+    <property name="user.dir" value="C:\Users\mayur.choudhary\Downloads\E2EProject"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\mayur.choudhary\Downloads\E2EProject"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.6_10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Amazon Corretto/jdk11.0.6_10/bin/server;C:/Program Files/Amazon Corretto/jdk11.0.6_10/bin;C:\Program Files\Amazon Corretto\jdk11.0.6_10\bin;C:\Python27\;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\mayur.choudhary\Downloads\apache-maven-3.6.3\bin;C:\Users\mayur.choudhary\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\mayur.choudhary\AppData\Local\Programs\Python\Python38-32\;C:\Users\mayur.choudhary\AppData\Local\Microsoft\WindowsApps;C:\Users\mayur.choudhary\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mayur.choudhary\AppData\Roaming\npm;C:\Users\mayur.choudhary\AppData\Local\Programs\Git\cmd;C:\Users\mayur.choudhary\Downloads\Automation\apache-maven-3.6.3\bin;;C:\eclipse;;."/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.6+10-LTS"/>
+    <property name="classworlds.conf" value="C:\Users\mayur.choudhary\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1566876275644200726.tmp"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="basePageNavigation" classname="Academy.HomePage" time="5.233"/>
+  <testcase name="basePageNavigation" classname="Academy.HomePage" time="3.463"/>
+  <testcase name="validateAppTitle" classname="Academy.validateTitle" time="0.09">
+    <failure message="expected [FEATURED CO123URSES] but found [FEATURED COURSES]" type="java.lang.AssertionError">java.lang.AssertionError: expected [FEATURED CO123URSES] but found [FEATURED COURSES]
+	at Academy.validateTitle.validateAppTitle(validateTitle.java:43)
+</failure>
+    <system-out><![CDATA[chrome
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 5430
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1608292252.254][WARNING]: Timed out connecting to Chrome, retrying...
+Dec 18, 2020 5:20:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1608292254.898][SEVERE]: Timed out receiving message from renderer: 0.100
+[1608292255.001][SEVERE]: Timed out receiving message from renderer: 0.100
+[1608292255.105][SEVERE]: Timed out receiving message from renderer: 0.100
+[1608292255.207][SEVERE]: Timed out receiving message from renderer: 0.100
+[1608292255.310][SEVERE]: Timed out receiving message from renderer: 0.100
+[1608292256.432][SEVERE]: Timed out receiving message from renderer: 0.100
+[1608292256.635][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+  </testcase>
+  <testcase name="validateAppNavBar" classname="Academy.validateNavigationBar" time="0.096"/>
+</testsuite>
