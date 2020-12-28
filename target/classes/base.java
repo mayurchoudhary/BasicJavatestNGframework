@@ -7,6 +7,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -20,16 +21,22 @@ public WebDriver initializeDriver() throws IOException
 {
 	
  prop= new Properties();
-FileInputStream fis=new FileInputStream("C:\\Users\\mayur.choudhary\\Downloads\\E2EProject\\src\\main\\java\\resources\\data.properties");
+FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties");
 
 prop.load(fis);
 String browserName=prop.getProperty("browser");
 System.out.println(browserName);
 
-if(browserName.equals("chrome"))
+if(browserName.contains("chrome"))
 {
 	 System.setProperty("webdriver.chrome.driver", "C://Users//mayur.choudhary//Downloads//chromedriver_win32//chromedriver.exe");
-	driver= new ChromeDriver();
+	ChromeOptions options =new ChromeOptions();
+	if(browserName.contains("headless"))
+	{
+		options.addArguments("headless");
+	}
+	
+	 driver= new ChromeDriver(options);
 		//execute in chrome driver
 	
 }

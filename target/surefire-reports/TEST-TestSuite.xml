@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="39.743" tests="4" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="42.745" tests="4" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -56,32 +56,33 @@
     <property name="java.vendor" value="Amazon.com Inc."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vm.version" value="11.0.6+10-LTS"/>
-    <property name="classworlds.conf" value="C:\Users\mayur.choudhary\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1566876275644200726.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\mayur.choudhary\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2552108619303484823.tmp"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="basePageNavigation" classname="Academy.HomePage" time="5.233"/>
-  <testcase name="basePageNavigation" classname="Academy.HomePage" time="3.463"/>
-  <testcase name="validateAppTitle" classname="Academy.validateTitle" time="0.09">
+  <testcase name="basePageNavigation" classname="Academy.HomePage" time="7.524"/>
+  <testcase name="basePageNavigation" classname="Academy.HomePage" time="4.374"/>
+  <testcase name="validateAppTitle" classname="Academy.validateTitle" time="0.143">
     <failure message="expected [FEATURED CO123URSES] but found [FEATURED COURSES]" type="java.lang.AssertionError">java.lang.AssertionError: expected [FEATURED CO123URSES] but found [FEATURED COURSES]
 	at Academy.validateTitle.validateAppTitle(validateTitle.java:43)
 </failure>
     <system-out><![CDATA[chrome
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 5430
+    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 8711
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1608292252.254][WARNING]: Timed out connecting to Chrome, retrying...
-Dec 18, 2020 5:20:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1608789049.040][WARNING]: Timed out connecting to Chrome, retrying...
+Dec 24, 2020 11:20:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1608292254.898][SEVERE]: Timed out receiving message from renderer: 0.100
-[1608292255.001][SEVERE]: Timed out receiving message from renderer: 0.100
-[1608292255.105][SEVERE]: Timed out receiving message from renderer: 0.100
-[1608292255.207][SEVERE]: Timed out receiving message from renderer: 0.100
-[1608292255.310][SEVERE]: Timed out receiving message from renderer: 0.100
-[1608292256.432][SEVERE]: Timed out receiving message from renderer: 0.100
-[1608292256.635][SEVERE]: Timed out receiving message from renderer: 0.100
+[1608789051.542][SEVERE]: Timed out receiving message from renderer: 0.100
+[1608789051.644][SEVERE]: Timed out receiving message from renderer: 0.100
+[1608789051.746][SEVERE]: Timed out receiving message from renderer: 0.100
+[1608789051.849][SEVERE]: Timed out receiving message from renderer: 0.100
+[1608789053.170][SEVERE]: Timed out receiving message from renderer: 0.100
+[1608789053.272][SEVERE]: Timed out receiving message from renderer: 0.100
+[1608789053.375][SEVERE]: Timed out receiving message from renderer: 0.100
+[1608789053.536][SEVERE]: Timed out receiving message from renderer: 0.100
 ]]></system-err>
   </testcase>
-  <testcase name="validateAppNavBar" classname="Academy.validateNavigationBar" time="0.096"/>
+  <testcase name="validateAppNavBar" classname="Academy.validateNavigationBar" time="0.176"/>
 </testsuite>

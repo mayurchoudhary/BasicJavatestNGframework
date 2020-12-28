@@ -8,6 +8,7 @@
     <classes>
       <class name="Academy.validateTitle">
         <methods>
+          <include name="validateHeader"/>
           <include name="validateAppTitle"/>
           <include name="initialize"/>
           <include name="teardown"/>
