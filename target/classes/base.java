@@ -37,6 +37,7 @@ if(browserName.contains("chrome"))
 	}
 	
 	 driver= new ChromeDriver(options);
+	
 		//execute in chrome driver
 	
 }
@@ -50,7 +51,8 @@ if(browserName.contains("chrome"))
 ////	IE code
 //}
 
-driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+driver.manage().window().maximize();
 return driver;
 
 

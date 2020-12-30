@@ -9,10 +9,17 @@ public class LandingPage {
 	
 	public  WebDriver driver;
 	
-	private By signin=By.cssSelector("a[href*='sign_in']");
-	private By title=By.cssSelector(".text-center>h2");
-	private By NavBar=By.cssSelector(".nav.navbar-nav.navbar-right>li>a");
-	private  By header=By.cssSelector("div[class*='video-banner'] h3");
+	
+	
+	private  By country_image=By.xpath("//img[@class='countryImg']");
+	private By Select_Country=By.xpath("//div[@class='searchInputWrapper']/input[@type='text']");
+	private By CountryInd=By.xpath("//span[@class='mat-option-text']");
+	private By signin=By.xpath("//input[@placeholder='Enter phone number']");
+	private By mobileenter= By.xpath("//input[@id='EligibiltyRequest.mdn']");
+	private By title_text=By.xpath("//span[@id='headerText']");
+	private By Submit_button=By.xpath("//button[text()='Submit']");
+	private  By footer=By.xpath("//footer[@id='appFooter']");
+	
 	
 	
 	
@@ -38,17 +45,34 @@ public class LandingPage {
 		 
 		 
 	}
-	public WebElement getNavigationBar()
+	public WebElement getcountry_image()
 	{
-		return driver.findElement(NavBar);
+		return driver.findElement(country_image);
 	}
-	public WebElement getTitle()
+	public WebElement getSelect_Country()
 	{
-		return driver.findElement(title);
+		return driver.findElement(Select_Country);
 	}
-	public WebElement getHeader()
+	public WebElement getCountryInd()
 	{
-		return driver.findElement(header);
+		return driver.findElement(CountryInd);
+	}
+	public WebElement getmobileenter()
+	{
+		return driver.findElement(mobileenter);
+	}
+	public CodeValidation submit_signin()
+	{
+		driver.findElement(Submit_button).click();
+		return new CodeValidation(driver);
+	}
+	public WebElement gettitle_text()
+	{
+		return driver.findElement(title_text);
+	}
+	public WebElement getfooter()
+	{
+		return driver.findElement(footer);
 	}
 	
 	

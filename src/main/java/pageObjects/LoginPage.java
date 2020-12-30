@@ -9,10 +9,10 @@ public class LoginPage {
 	
 	public WebDriver driver;
 	
-	By email=By.cssSelector("[id='user_email']");
-	By password=By.cssSelector("[type='password']");
-	By login=By.cssSelector("[value='Log In']");
-	By forgotPassword = By.cssSelector("[href*='password/new']");
+	By email=By.xpath("//input[@aria-label='Email or phone'][@id='identifierId']");
+	By Next_button=By.xpath("//span[text()='Next']");
+	By password=By.xpath("//input[@aria-label='Enter your password']");
+	By forgotPassword = By.xpath("//span[text()='Forgot password?']");
 	
 	
 	
@@ -26,12 +26,12 @@ public class LoginPage {
 
 
 
-public ForgotPassword forgotPassword()
-{
-	driver.findElement(forgotPassword).click();
-	return new ForgotPassword(driver);
-	
-}
+//public ForgotPassword forgotPassword()
+//{
+//	driver.findElement(forgotPassword).click();
+//	return new ForgotPassword(driver);
+//	
+//}
 	public WebElement getEmail()
 	{
 		return driver.findElement(email);
@@ -42,11 +42,11 @@ public ForgotPassword forgotPassword()
 	{
 		return driver.findElement(password);
 	}
-	
-	public WebElement getLogin()
+	public WebElement getNext_button()
 	{
-		return driver.findElement(login);
+		return driver.findElement(Next_button);
 	}
+	
 	
 	
 	

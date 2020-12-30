@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Academy.validateTitle">
+      <class name="Academy.SigninTests">
         <methods>
-          <include name="validateAppTitle"/>
-          <include name="initialize"/>
           <include name="teardown"/>
+          <include name="initialize"/>
+          <include name="basePageNavigation" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Academy.validateTitle -->
+      </class> <!-- Academy.SigninTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
