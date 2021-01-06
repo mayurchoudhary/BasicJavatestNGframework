@@ -1,8 +1,26 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 42.745 s <<< FAILURE! - in TestSuite
-validateAppTitle(Academy.validateTitle)  Time elapsed: 0.143 s  <<< FAILURE!
-java.lang.AssertionError: expected [FEATURED CO123URSES] but found [FEATURED COURSES]
-	at Academy.validateTitle.validateAppTitle(validateTitle.java:43)
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 140.897 s <<< FAILURE! - in TestSuite
+baseGoogleInvalidTest(com.squaretrade.tests.SignininvalidTests)  Time elapsed: 49.675 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Try Again']"}
+  (Session info: chrome=80.0.3987.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IITC-WS-NB37', ip: '192.168.29.127', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\MAYUR~1.CHO\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62625}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ecfb4c4030f62c7b37c1f1e65ce71e72
+*** Element info: {Using=xpath, value=//button[text()='Try Again']}
+	at com.squaretrade.tests.SignininvalidTests.baseGoogleInvalidTest(SignininvalidTests.java:56)
+
+validatefooter(com.squaretrade.tests.ValidateHeaderandFooter)  Time elapsed: 0.023 s  <<< FAILURE!
+java.lang.AssertionError: 
+expected [2020  Synchronoss. All rights Reserved] but found [©  2021  Synchronoss. All rights Reserved
+Terms of service
+Privacy Policy
+FAQ
+Cookies]
+	at com.squaretrade.tests.ValidateHeaderandFooter.validatefooter(ValidateHeaderandFooter.java:55)
 

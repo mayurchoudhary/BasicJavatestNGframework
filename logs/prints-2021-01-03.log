@@ -1,0 +1,4 @@
+09:26:12.519 [main] INFO  resources.base - https://sqtdstage.dxp.nonprod.cloud.synchronoss.net/?state=%222a8996f1-37d3-4a61-b0c6-da738c71c0a8%22&code=4%2F0AY0e-g7oc7yYzUUBFL5HyAkzpMHwfA5763WMx6NXvQ0K3Mnx1boVPFCb9GtRVNk-JJuuwQ&scope=email%20https:%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20openid&authuser=0&prompt=consent
+09:26:26.038 [main] INFO  resources.base - Driver is initialized
+09:26:29.699 [main] INFO  resources.base - Navigated to Home page
+09:26:37.161 [main] INFO  resources.base - Successfully validated Text message

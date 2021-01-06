@@ -1,0 +1,5 @@
+19:15:20.891 [main] INFO  resources.DriverController - Navigated to Home page
+19:16:29.762 [main] INFO  resources.DriverController - https://sqtdstage.dxp.nonprod.cloud.synchronoss.net/?redirect_url=&application_id=&carrier=SQTD
+19:16:39.925 [main] INFO  resources.DriverController - Driver is initialized
+19:16:50.059 [main] INFO  resources.DriverController - Navigated to Home page
+19:17:56.402 [main] INFO  resources.DriverController - https://sqtdstage.dxp.nonprod.cloud.synchronoss.net/?redirect_url=&application_id=&carrier=SQTD

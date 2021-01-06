@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-30T15:18:33 IST" name="Default suite" finished-at="2020-12-30T15:19:55 IST" duration-ms="82085">
+  <suite started-at="2021-01-06T19:11:51 IST" name="SquareTradeSuite" finished-at="2021-01-06T19:18:47 IST" duration-ms="415994">
     <groups>
     </groups>
-    <test started-at="2020-12-30T15:18:33 IST" name="Default test" finished-at="2020-12-30T15:19:55 IST" duration-ms="82085">
-      <class name="Academy.SigninTests">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.SigninTests@5c18016b]" started-at="2020-12-30T15:18:33 IST" name="initialize" finished-at="2020-12-30T15:18:43 IST" duration-ms="10139" status="PASS">
+    <test started-at="2021-01-06T19:11:51 IST" name="Validating title in the Page" finished-at="2021-01-06T19:12:18 IST" duration-ms="26820">
+      <class name="com.squaretrade.tests.ValidateHeaderandFooter">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.squaretrade.tests.ValidateHeaderandFooter@768ccdc5]" started-at="2021-01-06T19:11:51 IST" name="initialize" finished-at="2021-01-06T19:12:09 IST" duration-ms="17816" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.SigninTests@5c18016b]" started-at="2020-12-30T15:18:43 IST" name="basePageNavigation" data-provider="getData" finished-at="2020-12-30T15:19:51 IST" duration-ms="67739" status="PASS">
+        <test-method signature="URLCheckTest()[pri:0, instance:com.squaretrade.tests.ValidateHeaderandFooter@768ccdc5]" started-at="2021-01-06T19:12:09 IST" name="URLCheckTest" finished-at="2021-01-06T19:12:16 IST" duration-ms="7686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- URLCheckTest -->
+        <test-method signature="validateAppTitle()[pri:0, instance:com.squaretrade.tests.ValidateHeaderandFooter@768ccdc5]" started-at="2021-01-06T19:12:16 IST" name="validateAppTitle" finished-at="2021-01-06T19:12:17 IST" duration-ms="710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAppTitle -->
+        <test-method signature="validatefooter()[pri:0, instance:com.squaretrade.tests.ValidateHeaderandFooter@768ccdc5]" started-at="2021-01-06T19:12:17 IST" name="validatefooter" finished-at="2021-01-06T19:12:17 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatefooter -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.squaretrade.tests.ValidateHeaderandFooter@768ccdc5]" started-at="2021-01-06T19:12:17 IST" name="teardown" finished-at="2021-01-06T19:12:18 IST" duration-ms="491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.squaretrade.tests.ValidateHeaderandFooter -->
+    </test> <!-- Validating title in the Page -->
+    <test started-at="2021-01-06T19:12:18 IST" name="Validating User login" finished-at="2021-01-06T19:13:16 IST" duration-ms="58262">
+      <class name="com.squaretrade.tests.SigninTests">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.squaretrade.tests.SigninTests@eb6449b]" started-at="2021-01-06T19:12:18 IST" name="initialize" finished-at="2021-01-06T19:12:33 IST" duration-ms="14923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="baseGoogleValidTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.squaretrade.tests.SigninTests@eb6449b]" started-at="2021-01-06T19:12:33 IST" name="baseGoogleValidTest" data-provider="getData" finished-at="2021-01-06T19:13:16 IST" duration-ms="42972" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[twettest1@gmail.com]]>
+                <![CDATA[tweettest14@gmail.com]]>
               </value>
             </param>
             <param index="1">
@@ -25,18 +49,154 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Restrcited User]]>
+                <![CDATA[GooglevalidUser]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.SigninTests@5c18016b]" started-at="2020-12-30T15:19:51 IST" name="teardown" finished-at="2020-12-30T15:19:55 IST" duration-ms="4153" status="PASS">
+        </test-method> <!-- baseGoogleValidTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.squaretrade.tests.SigninTests@eb6449b]" started-at="2021-01-06T19:13:16 IST" name="teardown" finished-at="2021-01-06T19:13:16 IST" duration-ms="354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- Academy.SigninTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.squaretrade.tests.SigninTests -->
+    </test> <!-- Validating User login -->
+    <test started-at="2021-01-06T19:13:17 IST" name="Validating error messages" finished-at="2021-01-06T19:13:43 IST" duration-ms="25978">
+      <class name="com.squaretrade.tests.ValidateErrorMessage">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.squaretrade.tests.ValidateErrorMessage@68759011]" started-at="2021-01-06T19:13:17 IST" name="initialize" finished-at="2021-01-06T19:13:31 IST" duration-ms="13998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateerrormessages()[pri:0, instance:com.squaretrade.tests.ValidateErrorMessage@68759011]" started-at="2021-01-06T19:13:31 IST" name="validateerrormessages" finished-at="2021-01-06T19:13:42 IST" duration-ms="11346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateerrormessages -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.squaretrade.tests.ValidateErrorMessage@68759011]" started-at="2021-01-06T19:13:42 IST" name="teardown" finished-at="2021-01-06T19:13:43 IST" duration-ms="630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.squaretrade.tests.ValidateErrorMessage -->
+    </test> <!-- Validating error messages -->
+    <test started-at="2021-01-06T19:13:43 IST" name="Validating invalid User login" finished-at="2021-01-06T19:15:00 IST" duration-ms="76939">
+      <class name="com.squaretrade.tests.SignininvalidTests">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.squaretrade.tests.SignininvalidTests@1536602f]" started-at="2021-01-06T19:13:43 IST" name="initialize" finished-at="2021-01-06T19:14:02 IST" duration-ms="19056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="baseGoogleInvalidTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.squaretrade.tests.SignininvalidTests@1536602f]" started-at="2021-01-06T19:14:02 IST" name="baseGoogleInvalidTest" data-provider="getData" finished-at="2021-01-06T19:14:59 IST" duration-ms="57131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tweettest14@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[userdemo1212]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Googleinvalid User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseGoogleInvalidTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.squaretrade.tests.SignininvalidTests@1536602f]" started-at="2021-01-06T19:14:59 IST" name="teardown" finished-at="2021-01-06T19:15:00 IST" duration-ms="744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.squaretrade.tests.SignininvalidTests -->
+    </test> <!-- Validating invalid User login -->
+    <test started-at="2021-01-06T19:15:00 IST" name="Validating Invalid userlogin Apple" finished-at="2021-01-06T19:16:30 IST" duration-ms="90166">
+      <class name="com.squaretrade.tests.AppleInvalidTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.squaretrade.tests.AppleInvalidTest@2c1b9e4b]" started-at="2021-01-06T19:15:00 IST" name="initialize" finished-at="2021-01-06T19:15:20 IST" duration-ms="20786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="baseAppleInvalidTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.squaretrade.tests.AppleInvalidTest@2c1b9e4b]" started-at="2021-01-06T19:15:20 IST" name="baseAppleInvalidTest" data-provider="getData" finished-at="2021-01-06T19:16:29 IST" duration-ms="68867" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[twettest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Intel@7373]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Appleinvalid User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAppleInvalidTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.squaretrade.tests.AppleInvalidTest@2c1b9e4b]" started-at="2021-01-06T19:16:29 IST" name="teardown" finished-at="2021-01-06T19:16:30 IST" duration-ms="508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.squaretrade.tests.AppleInvalidTest -->
+    </test> <!-- Validating Invalid userlogin Apple -->
+    <test started-at="2021-01-06T19:16:30 IST" name="Validating valid userlogin Apple" finished-at="2021-01-06T19:18:47 IST" duration-ms="137009">
+      <class name="com.squaretrade.tests.ApplevalidTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.squaretrade.tests.ApplevalidTest@77192705]" started-at="2021-01-06T19:16:30 IST" name="initialize" finished-at="2021-01-06T19:16:50 IST" duration-ms="19695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="baseAppleCancelFlowTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.squaretrade.tests.ApplevalidTest@77192705]" started-at="2021-01-06T19:16:50 IST" name="baseAppleCancelFlowTest" data-provider="getData" finished-at="2021-01-06T19:17:56 IST" duration-ms="66339" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tweettest14@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Intel@7373]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Applevalid User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAppleCancelFlowTest -->
+        <test-method signature="baseApplevalidTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.squaretrade.tests.ApplevalidTest@77192705]" started-at="2021-01-06T19:17:56 IST" name="baseApplevalidTest" data-provider="getData" finished-at="2021-01-06T19:18:47 IST" duration-ms="50614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tweettest14@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Intel@7373]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Applevalid User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseApplevalidTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.squaretrade.tests.ApplevalidTest@77192705]" started-at="2021-01-06T19:18:47 IST" name="teardown" finished-at="2021-01-06T19:18:47 IST" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.squaretrade.tests.ApplevalidTest -->
+    </test> <!-- Validating valid userlogin Apple -->
+  </suite> <!-- SquareTradeSuite -->
 </testng-results>

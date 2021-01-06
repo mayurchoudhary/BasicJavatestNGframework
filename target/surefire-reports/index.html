@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,7 +101,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Academy.validateTitle" class="method navigator-link" hash-for-method="validateAppTitle">validateAppTitle</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.squaretrade.tests.SignininvalidTests" class="method navigator-link" hash-for-method="baseGoogleInvalidTest(twettest1@gmail.com, userdemo1212, Googleinvalid User)">baseGoogleInvalidTest(twettest1@gmail.com, userdemo1212, Googleinvalid User)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.squaretrade.tests.ValidateHeaderandFooter" class="method navigator-link" hash-for-method="validatefooter">validatefooter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -115,17 +120,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Academy.HomePage" class="method navigator-link" hash-for-method="basePageNavigation(restricteduser@qw.com, 456788, Non restricted user)">basePageNavigation(restricteduser@qw.com, 456788, Non restricted user)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.squaretrade.tests.SigninTests" class="method navigator-link" hash-for-method="baseGoogleValidTest(tweettest14@gmail.com, userdemo1212, GooglevalidUser)">baseGoogleValidTest(tweettest14@gmail.com, userdemo1212, GooglevalidUser)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Academy.HomePage" class="method navigator-link" hash-for-method="basePageNavigation(nonrestricteduser@qw.com, 123456, Restrcited User)">basePageNavigation(nonrestricteduser@qw.com, 123456, Restrcited User)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Academy.validateNavigationBar" class="method navigator-link" hash-for-method="validateAppNavBar">validateAppNavBar</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.squaretrade.tests.ValidateHeaderandFooter" class="method navigator-link" hash-for-method="validateAppTitle">validateAppTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -143,29 +143,67 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Academy.validateTitle</span>
+              <span class="class-name">com.squaretrade.tests.SignininvalidTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateAppTitle">
-                  </a> <!-- validateAppTitle -->
-                  <span class="method-name">validateAppTitle</span>
-                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [FEATURED CO123URSES] but found [FEATURED COURSES]
-	at Academy.validateTitle.validateAppTitle(validateTitle.java:43)
+                  <a name="baseGoogleInvalidTest(twettest1@gmail.com, userdemo1212, Googleinvalid User)">
+                  </a> <!-- baseGoogleInvalidTest(twettest1@gmail.com, userdemo1212, Googleinvalid User) -->
+                  <span class="method-name">baseGoogleInvalidTest</span>
+                  <span class="parameters">(twettest1@gmail.com, userdemo1212, Googleinvalid User)</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Try Again&apos;]&quot;}
+  (Session info: chrome=80.0.3987.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IITC-WS-NB37&apos;, ip: &apos;192.168.29.127&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\MAYUR~1.CHO\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62625}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ecfb4c4030f62c7b37c1f1e65ce71e72
+*** Element info: {Using=xpath, value=//button[text()=&apos;Try Again&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.LoginPage.gettryagain(LoginPage.java:62)
+	at com.squaretrade.tests.SignininvalidTests.baseGoogleInvalidTest(SignininvalidTests.java:56)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-... Removed 26 stack frames<br/> java.lang.AssertionError: expected [FEATURED CO123URSES] but found [FEATURED COURSES]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.testng.Assert.assertEquals(Assert.java:186)
-	at Academy.validateTitle.validateAppTitle(validateTitle.java:43)
+... Removed 25 stack frames<br/> org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Try Again&apos;]&quot;}
+  (Session info: chrome=80.0.3987.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IITC-WS-NB37&apos;, ip: &apos;192.168.29.127&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\MAYUR~1.CHO\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62625}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ecfb4c4030f62c7b37c1f1e65ce71e72
+*** Element info: {Using=xpath, value=//button[text()=&apos;Try Again&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.LoginPage.gettryagain(LoginPage.java:62)
+	at com.squaretrade.tests.SignininvalidTests.baseGoogleInvalidTest(SignininvalidTests.java:56)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -193,7 +231,74 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:176)<br>org.testng.Assert.assertEquals(Assert.java:186)<br>Academy.validateTitle.validateAppTitle(validateTitle.java:43)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:566)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)<br>
+"</b><br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br>org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br>org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br>pageObjects.LoginPage.gettryagain(LoginPage.java:62)<br>com.squaretrade.tests.SignininvalidTests.baseGoogleInvalidTest(SignininvalidTests.java:56)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:566)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.squaretrade.tests.ValidateHeaderandFooter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatefooter">
+                  </a> <!-- validatefooter -->
+                  <span class="method-name">validatefooter</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [2020  Synchronoss. All rights Reserved] but found [©  2021  Synchronoss. All rights Reserved
+Terms of service
+Privacy Policy
+FAQ
+Cookies]
+	at com.squaretrade.tests.ValidateHeaderandFooter.validatefooter(ValidateHeaderandFooter.java:55)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+... Removed 26 stack frames<br/> java.lang.AssertionError: expected [2020  Synchronoss. All rights Reserved] but found [©  2021  Synchronoss. All rights Reserved
+Terms of service
+Privacy Policy
+FAQ
+Cookies]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.squaretrade.tests.ValidateHeaderandFooter.validatefooter(ValidateHeaderandFooter.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:176)<br>org.testng.Assert.assertEquals(Assert.java:186)<br>com.squaretrade.tests.ValidateHeaderandFooter.validatefooter(ValidateHeaderandFooter.java:55)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:566)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)<br>
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -202,14 +307,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Academy.validateNavigationBar</span>
+              <span class="class-name">com.squaretrade.tests.ValidateHeaderandFooter</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateAppNavBar">
-                  </a> <!-- validateAppNavBar -->
-                  <span class="method-name">validateAppNavBar</span>
+                  <a name="validateAppTitle">
+                  </a> <!-- validateAppTitle -->
+                  <span class="method-name">validateAppTitle</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -217,23 +322,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Academy.HomePage</span>
+              <span class="class-name">com.squaretrade.tests.SigninTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation(restricteduser@qw.com, 456788, Non restricted user)">
-                  </a> <!-- basePageNavigation(restricteduser@qw.com, 456788, Non restricted user) -->
-                  <span class="method-name">basePageNavigation</span>
-                  <span class="parameters">(restricteduser@qw.com, 456788, Non restricted user)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="basePageNavigation(nonrestricteduser@qw.com, 123456, Restrcited User)">
-                  </a> <!-- basePageNavigation(nonrestricteduser@qw.com, 123456, Restrcited User) -->
-                  <span class="method-name">basePageNavigation</span>
-                  <span class="parameters">(nonrestricteduser@qw.com, 123456, Restrcited User)</span>
+                  <a name="baseGoogleValidTest(tweettest14@gmail.com, userdemo1212, GooglevalidUser)">
+                  </a> <!-- baseGoogleValidTest(tweettest14@gmail.com, userdemo1212, GooglevalidUser) -->
+                  <span class="method-name">baseGoogleValidTest</span>
+                  <span class="parameters">(tweettest14@gmail.com, userdemo1212, GooglevalidUser)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -247,30 +344,25 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; verbose=&quot;0&quot;&gt;
+&lt;suite parallel=&quot;none&quot; name=&quot;Suite&quot; verbose=&quot;0&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;Academy.Listeners&quot;/&gt;
+    &lt;listener class-name=&quot;com.squaretrade.tests.Listeners&quot;/&gt;
   &lt;/listeners&gt;
+  &lt;test name=&quot;Validating invalid User login&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.squaretrade.tests.SignininvalidTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Validating invalid User login --&gt;
   &lt;test name=&quot;Validating User login&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Academy.HomePage&quot;/&gt;
+      &lt;class name=&quot;com.squaretrade.tests.SigninTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Validating User login --&gt;
   &lt;test name=&quot;Validating title in the Page&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Academy.validateTitle&quot;/&gt;
+      &lt;class name=&quot;com.squaretrade.tests.ValidateHeaderandFooter&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Validating title in the Page --&gt;
-  &lt;test name=&quot;App Testing&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;Academy.AppTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- App Testing --&gt;
-  &lt;test name=&quot;Validating navigation Bar&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;Academy.validateNavigationBar&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validating navigation Bar --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -282,16 +374,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
+                <span class="test-name">Validating invalid User login (1 class)</span>
+              </li>
+              <li>
                 <span class="test-name">Validating User login (1 class)</span>
               </li>
               <li>
                 <span class="test-name">Validating title in the Page (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">App Testing (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Validating navigation Bar (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -319,26 +408,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'basePageNavigation')
-data.setCell(0, 2, 'Academy.HomePage')
-data.setCell(0, 3, 7519);
+data.setCell(0, 1, 'baseGoogleInvalidTest')
+data.setCell(0, 2, 'com.squaretrade.tests.SignininvalidTests')
+data.setCell(0, 3, 49671);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'basePageNavigation')
-data.setCell(1, 2, 'Academy.HomePage')
-data.setCell(1, 3, 4374);
+data.setCell(1, 1, 'baseGoogleValidTest')
+data.setCell(1, 2, 'com.squaretrade.tests.SigninTests')
+data.setCell(1, 3, 41187);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateAppNavBar')
-data.setCell(2, 2, 'Academy.validateNavigationBar')
-data.setCell(2, 3, 176);
+data.setCell(2, 1, 'validateAppTitle')
+data.setCell(2, 2, 'com.squaretrade.tests.ValidateHeaderandFooter')
+data.setCell(2, 3, 7463);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateAppTitle')
-data.setCell(3, 2, 'Academy.validateTitle')
-data.setCell(3, 3, 132);
+data.setCell(3, 1, 'validatefooter')
+data.setCell(3, 2, 'com.squaretrade.tests.ValidateHeaderandFooter')
+data.setCell(3, 3, 23);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -364,54 +453,56 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Academy.HomePage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.squaretrade.tests.SignininvalidTests</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">basePageNavigation(nonrestricteduser@qw.com, 123456, Restrcited User)</span>
-                <span class="method-start">6365 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">basePageNavigation(restricteduser@qw.com, 456788, Non restricted user)</span>
-                <span class="method-start">13894 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">baseGoogleInvalidTest(twettest1@gmail.com, userdemo1212, Googleinvalid User)</span>
+                <span class="method-start">9425 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">18273 ms</span>
+                <span class="method-start">59452 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Academy.validateTitle</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.squaretrade.tests.SigninTests</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">22980 ms</span>
+                <span class="method-start">63996 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">baseGoogleValidTest(tweettest14@gmail.com, userdemo1212, GooglevalidUser)</span>
+                <span class="method-start">73188 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">114375 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.squaretrade.tests.ValidateHeaderandFooter</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">118718 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">validateAppTitle</span>
+                <span class="method-start">131538 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">validateAppTitle</span>
-                <span class="method-start">30725 ms</span>
+                <span class="method-name">validatefooter</span>
+                <span class="method-start">139001 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">31815 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Academy.validateNavigationBar</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">32184 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">validateAppNavBar</span>
-                <span class="method-start">39984 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">40161 ms</span>
+                <span class="method-start">139359 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

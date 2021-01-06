@@ -56,7 +56,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Dec 30, 2020 02:56:57 PM</span>
+                    <span class="badge badge-primary">Jan 6, 2021 07:11:49 PM</span>
                 </a>
             </li>
         </ul>
@@ -72,15 +72,7 @@
           <span class="title">Tests</span>
         </a>
       </li>
-            <li class="nav-item dropdown" onclick="toggleView('exception-view')">
-        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
-          <span class="icon-holder">
-            <i class="fa fa-bug"></i>
-          </span>
-          <span class="title">Exception</span>
-        </a>
-      </li>
-      <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
         <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
           <span class="icon-holder">
             <i class="fa fa-bar-chart"></i>
@@ -108,8 +100,8 @@
 					<i class="fa fa-exclamation-circle"></i>
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
 						
-						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 						
 						
 						
@@ -122,28 +114,28 @@
 		</div>
 		<div class="test-list-wrapper scrollable">
 			<ul class="test-list-item">
-				<li class="test-item"  status="fail" test-id="1"
+				<li class="test-item"  status="pass" test-id="1"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">basePageNavigation</p>
-							<p class="duration text-sm">0h 0m 37s+480ms</p>
-							<span class="datetime">14:57:08 PM</span>
+							<p class="name">URLCheckTest</p>
+							<p class="duration text-sm">0h 0m 7s+677ms</p>
+							<span class="datetime">19:12:09 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">basePageNavigation</h5>
-									<span class='badge badge-success'>12.30.2020 14:57:08</span>
-									<span class='badge badge-danger'>12.30.2020 14:57:46</span>
-									<span class='badge badge-default'>0h 0m 37s+480ms</span>
+									<h5 class="test-status text-pass">URLCheckTest</h5>
+									<span class='badge badge-success'>01.06.2021 19:12:09</span>
+									<span class='badge badge-danger'>01.06.2021 19:12:16</span>
+									<span class='badge badge-default'>0h 0m 7s+677ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -159,94 +151,39 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>2:57:46 PM</td>
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>7:12:16 PM</td>
 				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=80.0.3987.116)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'IITC-WS-NB37', ip: '192.168.43.126', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\MAYUR~1.CHO\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64474}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: eba5bb702921ce48bb88cede227b0f84
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pageObjects.CodeValidation.doGoogleLogin(CodeValidation.java:68)
-	at Academy.SigninTests.basePageNavigation(SigninTests.java:53)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</textarea>
+						Test Passed
 				</td>
 			</tr>
 	</tbody>
 </table>
 </div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\mayur.choudhary\Downloads\E2EProject\reports\basePageNavigation.png' src='C:\Users\mayur.choudhary\Downloads\E2EProject\reports\basePageNavigation.png'>
-	</ul>
-</div>
 					</div>
 				</li>
-				<li class="test-item"  status="fail" test-id="2"
+				<li class="test-item"  status="pass" test-id="2"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">basePageNavigation</p>
-							<p class="duration text-sm">0h 0m 27s+973ms</p>
-							<span class="datetime">14:57:47 PM</span>
+							<p class="name">validateAppTitle</p>
+							<p class="duration text-sm">0h 0m 0s+709ms</p>
+							<span class="datetime">19:12:16 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">basePageNavigation</h5>
-									<span class='badge badge-success'>12.30.2020 14:57:47</span>
-									<span class='badge badge-danger'>12.30.2020 14:58:15</span>
-									<span class='badge badge-default'>0h 0m 27s+973ms</span>
+									<h5 class="test-status text-pass">validateAppTitle</h5>
+									<span class='badge badge-success'>01.06.2021 19:12:16</span>
+									<span class='badge badge-danger'>01.06.2021 19:12:17</span>
+									<span class='badge badge-default'>0h 0m 0s+709ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -262,153 +199,351 @@ Session ID: eba5bb702921ce48bb88cede227b0f84
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>2:58:15 PM</td>
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>7:12:17 PM</td>
 				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=80.0.3987.116)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'IITC-WS-NB37', ip: '192.168.43.126', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\MAYUR~1.CHO\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64474}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: eba5bb702921ce48bb88cede227b0f84
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pageObjects.CodeValidation.doGoogleLogin(CodeValidation.java:68)
-	at Academy.SigninTests.basePageNavigation(SigninTests.java:53)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</textarea>
+						Test Passed
 				</td>
 			</tr>
 	</tbody>
 </table>
 </div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\mayur.choudhary\Downloads\E2EProject\reports\basePageNavigation.png' src='C:\Users\mayur.choudhary\Downloads\E2EProject\reports\basePageNavigation.png'>
-	</ul>
-</div>
 					</div>
 				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="test-content scrollable">
-		<div class="test-content-tools">
-			<ul>
-				<li>
-					<a class="back-to-test" href="javascript:void(0)">
-					<i class="fa fa-arrow-left"></i>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="test-content-detail">
-			<div class="detail-body"></div>
-		</div>
-	</div>
-</div><div class="test-wrapper row exception-view attributes-view">
-	<div class="test-list">
-		<div class="test-list-tools">
-			<ul class="tools pull-left">
-				<li>
-					<a href="">
-					<span class="font-size-14">Exception</span>
-					</a>
-				</li>
-			</ul>
-			<ul class="tools text-right">
-				<li>
-					<a href="#">
-					<span class="badge badge-primary">1</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="test-list-wrapper scrollable">
-			<ul class="test-list-item">
-				<li class="test-item">
+				<li class="test-item"  status="pass" test-id="3"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">org.openqa.selenium.StaleElementReferenceException</p>
-							<p class="duration text-sm">2 tests</p>
+							<p class="name">validatefooter</p>
+							<p class="duration text-sm">0h 0m 0s+55ms</p>
+							<span class="datetime">19:12:17 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
-						<div class="info">
-							<h4>org.openqa.selenium.StaleElementReferenceException</h4>
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">validatefooter</h5>
+									<span class='badge badge-success'>01.06.2021 19:12:17</span>
+									<span class='badge badge-danger'>01.06.2021 19:12:17</span>
+									<span class='badge badge-default'>0h 0m 0s+55ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
 						</div>
-						<table class='table table-sm mt-4'>
-							<thead>
-								<tr>
-									<th class="status-col">Status</th>
-									<th class="timestamp-col">Timestamp</th>
-									<th>TestName</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>14:57:08 PM</td>
-									<td class='linked' test-id='1'>
-										basePageNavigation
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>14:57:47 PM</td>
-									<td class='linked' test-id='2'>
-										basePageNavigation
-									</td>
-								</tr>
-							</tbody>
-						</table>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>7:12:17 PM</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="4"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">baseGoogleValidTest</p>
+							<p class="duration text-sm">0h 0m 42s+972ms</p>
+							<span class="datetime">19:12:33 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">baseGoogleValidTest</h5>
+									<span class='badge badge-success'>01.06.2021 19:12:33</span>
+									<span class='badge badge-danger'>01.06.2021 19:13:16</span>
+									<span class='badge badge-default'>0h 0m 42s+972ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>7:13:16 PM</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="5"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">validateerrormessages</p>
+							<p class="duration text-sm">0h 0m 11s+346ms</p>
+							<span class="datetime">19:13:31 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">validateerrormessages</h5>
+									<span class='badge badge-success'>01.06.2021 19:13:31</span>
+									<span class='badge badge-danger'>01.06.2021 19:13:42</span>
+									<span class='badge badge-default'>0h 0m 11s+346ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>7:13:42 PM</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="6"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">baseGoogleInvalidTest</p>
+							<p class="duration text-sm">0h 0m 57s+130ms</p>
+							<span class="datetime">19:14:02 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">baseGoogleInvalidTest</h5>
+									<span class='badge badge-success'>01.06.2021 19:14:02</span>
+									<span class='badge badge-danger'>01.06.2021 19:14:59</span>
+									<span class='badge badge-default'>0h 0m 57s+130ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>7:14:59 PM</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="7"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">baseAppleInvalidTest</p>
+							<p class="duration text-sm">0h 1m 8s+868ms</p>
+							<span class="datetime">19:15:20 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">baseAppleInvalidTest</h5>
+									<span class='badge badge-success'>01.06.2021 19:15:20</span>
+									<span class='badge badge-danger'>01.06.2021 19:16:29</span>
+									<span class='badge badge-default'>0h 1m 8s+868ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>7:16:29 PM</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="8"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">baseAppleCancelFlowTest</p>
+							<p class="duration text-sm">0h 1m 6s+339ms</p>
+							<span class="datetime">19:16:50 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">baseAppleCancelFlowTest</h5>
+									<span class='badge badge-success'>01.06.2021 19:16:50</span>
+									<span class='badge badge-danger'>01.06.2021 19:17:56</span>
+									<span class='badge badge-default'>0h 1m 6s+339ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>7:17:56 PM</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="9"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">baseApplevalidTest</p>
+							<p class="duration text-sm">0h 0m 50s+615ms</p>
+							<span class="datetime">19:17:56 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">baseApplevalidTest</h5>
+									<span class='badge badge-success'>01.06.2021 19:17:56</span>
+									<span class='badge badge-danger'>01.06.2021 19:18:47</span>
+									<span class='badge badge-default'>0h 0m 50s+615ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>7:18:47 PM</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
 					</div>
 				</li>
 			</ul>
@@ -442,12 +577,12 @@ Session ID: eba5bb702921ce48bb88cede227b0f84
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='0%'>
-						<b>0</b> tests passed
+					<div><small data-tooltip='100%'>
+						<b>9</b> tests passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='100%'><b>2</b> tests failed, 
+						<small data-tooltip='0%'><b>0</b> tests failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -465,9 +600,9 @@ Session ID: eba5bb702921ce48bb88cede227b0f84
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+					<div><small data-tooltip='100%'><b>9</b> events passed</small></div>
 					<div>
-						<small data-tooltip='100%'><b>2</b> events failed, 
+						<small data-tooltip='0%'><b>0</b> events failed, 
 						<b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -482,10 +617,10 @@ Session ID: eba5bb702921ce48bb88cede227b0f84
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Tests</h6>
-							<h2 class="font-size-28 font-weight-light mt-3">2</h2>
+							<h2 class="font-size-28 font-weight-light mt-3">9</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>.00%</span>
+							<span>100.00%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -501,7 +636,7 @@ Session ID: eba5bb702921ce48bb88cede227b0f84
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Dec 30, 2020 02:56:57 PM</h4>
+							<h4 class="font-weight-light mt-4">Jan 6, 2021 07:11:49 PM</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -517,7 +652,7 @@ Session ID: eba5bb702921ce48bb88cede227b0f84
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 1m 23s+841ms</h4>
+							<h4 class="font-weight-light mt-4">0h 6m 57s+441ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -570,14 +705,14 @@ Session ID: eba5bb702921ce48bb88cede227b0f84
 </div>
 <script>
 	var statusGroup = {
-	    parentCount: 2,
-		passParent: 0,
-		failParent: 2,
+	    parentCount: 9,
+		passParent: 9,
+		failParent: 0,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 2,
+		exceptionsParent: 0,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -598,9 +733,9 @@ Session ID: eba5bb702921ce48bb88cede227b0f84
 		infoGrandChild: 0,
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
-		eventsCount: 2,
-		passEvents: 0,
-		failEvents: 2,
+		eventsCount: 9,
+		passEvents: 9,
+		failEvents: 0,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
@@ -612,7 +747,7 @@ Session ID: eba5bb702921ce48bb88cede227b0f84
 </script>
 <script>
 	var timeline = {
-	        "basePageNavigation":37.48,"basePageNavigation":27.973
+	        "URLCheckTest":7.677,"validateAppTitle":0.709,"validatefooter":0.055,"baseGoogleValidTest":42.972,"validateerrormessages":11.346,"baseGoogleInvalidTest":57.13,"baseAppleInvalidTest":68.868,"baseAppleCancelFlowTest":66.339,"baseApplevalidTest":50.615
 	};
 </script>
                 </div>

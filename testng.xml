@@ -1,30 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-<listeners>
-<listener class-name="Academy.Listeners"/>
-</listeners>
+<suite name="SquareTradeSuite">
+	<listeners>
 
-  <test name="Validating User login">
-    <classes>
-      <class name="Academy.SigninTests"/>
-          </classes>
-      </test>
-      
-  <!--   <test name="Validating title in the Page">
-         <classes>
-      <class name="Academy.validateTitle"/>
-       </classes>
-      </test> -->
-      <!--  <test name="App Testing">
-         <classes>
-      <class name="Academy.AppTest"/>
-       </classes>
-      </test>
-            <test name="Validating navigation Bar">
-         <classes>
-      <class name="Academy.validateNavigationBar"/>
-   </classes>
-      </test> -->
-   <!-- Test -->
+		<listener class-name="com.squaretrade.tests.Listeners" />
+	</listeners>
+
+	<test name="Validating title in the Page">
+		<classes>
+			<class name="com.squaretrade.tests.ValidateHeaderandFooter" />
+
+		</classes>
+	</test>
+	<test name="Validating User login">
+		<classes>
+			<class name="com.squaretrade.tests.SigninTests" />
+
+		</classes>
+	</test>
+	<test name="Validating error messages">
+		<classes>
+			<class name="com.squaretrade.tests.ValidateErrorMessage" />
+		</classes>
+	</test>
+
+	<test name="Validating invalid User login">
+		<classes>
+			<class name="com.squaretrade.tests.SignininvalidTests" />
+		</classes>
+	</test>
+
+	<test name="Validating Invalid userlogin Apple">
+		<classes>
+			<class name="com.squaretrade.tests.AppleInvalidTest" />
+		</classes>
+	</test>
+	<test name="Validating valid userlogin Apple">
+		<classes>
+			<class name="com.squaretrade.tests.ApplevalidTest" />
+		</classes>
+	</test>
+	<!-- Test -->
 </suite> <!-- Suite -->

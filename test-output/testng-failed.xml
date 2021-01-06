@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Academy.SigninTests">
+      <class name="com.squaretrade.tests.ValidateErrorMessage">
         <methods>
           <include name="teardown"/>
           <include name="initialize"/>
-          <include name="basePageNavigation" invocation-numbers="0"/>
+          <include name="validateerrormessages"/>
         </methods>
-      </class> <!-- Academy.SigninTests -->
+      </class> <!-- com.squaretrade.tests.ValidateErrorMessage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

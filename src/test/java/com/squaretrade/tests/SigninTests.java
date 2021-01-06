@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -15,24 +16,18 @@ import org.testng.annotations.Test;
 import pageObjects.CodeValidation;
 import pageObjects.LandingPage;
 import pageObjects.LoginPage;
-import resources.base;
+import resources.SqtdWebElement;
+import resources.DriverController;
 
-public class SigninTests extends base{
-	public WebDriver driver;
+public class SigninTests extends BaseTest{
 	
-	 public static Logger log =LogManager.getLogger(base.class.getName());
-	@BeforeTest
-	public void initialize() throws IOException
-	{
+	 public static Logger log =LogManager.getLogger(DriverController.class.getName());
 	
-		 driver =initializeDriver();
-		
-	}
 	@Test(dataProvider="getData")
 	
-	public void basePageNavigation(String Username,String Password,String text) throws IOException, InterruptedException
+	public void baseGoogleValidTest(String Username,String Password,String text) throws IOException, InterruptedException
 	{
-
+		
 		//one is inheritance
 
 		// creating object to that class and invoke methods of it
@@ -40,19 +35,19 @@ public class SigninTests extends base{
 		
 		LandingPage l=new LandingPage(driver);
 		
-		
 		l.getcountry_image().click();
 		l.getSelect_Country().sendKeys("india");
 		l.getCountryInd().click();
-		l.getmobileenter().sendKeys("9971074752");
+		//l.getmobileenterapple().sendKeys("7983793369");
+		l.getmobileentergoogle().sendKeys("9971074752");
 	    
 	   CodeValidation codeValidationPage= l.submit_signin();
 	   String codestorage = codeValidationPage.getaccesscode().getText();
 	   codeValidationPage.getcodeenter().sendKeys(codestorage);
 	    codeValidationPage.getSubmitCode().click();
 	    codeValidationPage.doGoogleLogin(Username,Password);
-	    
-		log.info(text);
+	    Thread.sleep(10000);
+		log.info(driver.getCurrentUrl());
 		
 		
 	//	ForgotPassword fp= lp.forgotPassword();
@@ -63,15 +58,7 @@ public class SigninTests extends base{
 		
 		}
 
-	@AfterTest
-	public void teardown()
-	{
-		
-		driver.close();
 	
-		
-	}
-
 	
 	@DataProvider
 	public Object[][] getData()
@@ -83,14 +70,14 @@ public class SigninTests extends base{
 		// 0,1
 		Object[][] data=new Object[1][3];
 		//0th row
-		data[0][0]="twettest1@gmail.com";
+		data[0][0]="tweettest14@gmail.com";
 		data[0][1]="userdemo1212";
-		data[0][2]="Restrcited User";
-		//1st row
+		data[0][2]="GooglevalidUser";
+//		//1st row
 //		data[1][0]="tweettest14@gmail.com";
 //		data[1][1]="userdemo1212";
-//		data[1][2]= "Non restricted user";
-//		
+//		data[1][2]= "Google user";
+		
 		return data;
 		
 		

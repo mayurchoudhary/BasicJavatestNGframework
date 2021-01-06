@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="42.745" tests="4" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="140.897" tests="4" errors="0" skipped="0" failures="2">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -56,33 +56,83 @@
     <property name="java.vendor" value="Amazon.com Inc."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vm.version" value="11.0.6+10-LTS"/>
-    <property name="classworlds.conf" value="C:\Users\mayur.choudhary\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2552108619303484823.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\mayur.choudhary\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf17174772966555556969.tmp"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="basePageNavigation" classname="Academy.HomePage" time="7.524"/>
-  <testcase name="basePageNavigation" classname="Academy.HomePage" time="4.374"/>
-  <testcase name="validateAppTitle" classname="Academy.validateTitle" time="0.143">
-    <failure message="expected [FEATURED CO123URSES] but found [FEATURED COURSES]" type="java.lang.AssertionError">java.lang.AssertionError: expected [FEATURED CO123URSES] but found [FEATURED COURSES]
-	at Academy.validateTitle.validateAppTitle(validateTitle.java:43)
+  <testcase name="baseGoogleInvalidTest" classname="com.squaretrade.tests.SignininvalidTests" time="49.675">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Try Again&apos;]&quot;}&#10;  (Session info: chrome=80.0.3987.116)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;IITC-WS-NB37&apos;, ip: &apos;192.168.29.127&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\MAYUR~1.CHO\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62625}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: ecfb4c4030f62c7b37c1f1e65ce71e72&#10;*** Element info: {Using=xpath, value=//button[text()=&apos;Try Again&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Try Again']"}
+  (Session info: chrome=80.0.3987.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IITC-WS-NB37', ip: '192.168.29.127', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\MAYUR~1.CHO\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62625}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ecfb4c4030f62c7b37c1f1e65ce71e72
+*** Element info: {Using=xpath, value=//button[text()='Try Again']}
+	at com.squaretrade.tests.SignininvalidTests.baseGoogleInvalidTest(SignininvalidTests.java:56)
 </failure>
     <system-out><![CDATA[chrome
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 8711
+    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 16033
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1608789049.040][WARNING]: Timed out connecting to Chrome, retrying...
-Dec 24, 2020 11:20:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1609646061.383][WARNING]: Timed out connecting to Chrome, retrying...
+Jan 03, 2021 9:24:23 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1608789051.542][SEVERE]: Timed out receiving message from renderer: 0.100
-[1608789051.644][SEVERE]: Timed out receiving message from renderer: 0.100
-[1608789051.746][SEVERE]: Timed out receiving message from renderer: 0.100
-[1608789051.849][SEVERE]: Timed out receiving message from renderer: 0.100
-[1608789053.170][SEVERE]: Timed out receiving message from renderer: 0.100
-[1608789053.272][SEVERE]: Timed out receiving message from renderer: 0.100
-[1608789053.375][SEVERE]: Timed out receiving message from renderer: 0.100
-[1608789053.536][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646065.434][WARNING]: Timed out connecting to Chrome, retrying...
+[1609646068.632][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646068.733][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646068.836][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646068.938][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646069.039][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646069.141][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646069.244][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646069.346][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646069.447][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646069.563][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646069.667][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646069.770][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646069.873][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646069.975][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646070.077][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646070.179][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646070.281][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646070.383][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646070.485][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646070.586][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646070.688][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646070.791][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646070.893][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646070.995][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646071.096][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646071.199][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646094.235][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646094.388][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646094.489][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646094.592][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646094.693][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646094.795][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646095.184][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646095.288][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646095.389][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646095.491][SEVERE]: Timed out receiving message from renderer: 0.100
+[1609646095.693][SEVERE]: Timed out receiving message from renderer: 0.100
 ]]></system-err>
   </testcase>
-  <testcase name="validateAppNavBar" classname="Academy.validateNavigationBar" time="0.176"/>
+  <testcase name="baseGoogleValidTest" classname="com.squaretrade.tests.SigninTests" time="41.187"/>
+  <testcase name="validateAppTitle" classname="com.squaretrade.tests.ValidateHeaderandFooter" time="7.462"/>
+  <testcase name="validatefooter" classname="com.squaretrade.tests.ValidateHeaderandFooter" time="0.023">
+    <failure message="expected [2020  Synchronoss. All rights Reserved] but found [©  2021  Synchronoss. All rights Reserved&#10;Terms of service&#10;Privacy Policy&#10;FAQ&#10;Cookies]" type="java.lang.AssertionError">java.lang.AssertionError: 
+expected [2020  Synchronoss. All rights Reserved] but found [©  2021  Synchronoss. All rights Reserved
+Terms of service
+Privacy Policy
+FAQ
+Cookies]
+	at com.squaretrade.tests.ValidateHeaderandFooter.validatefooter(ValidateHeaderandFooter.java:55)
+</failure>
+    <system-out><![CDATA[2020  Synchronoss. All rights Reserved
+]]></system-out>
+  </testcase>
 </testsuite>
